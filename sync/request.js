@@ -1,7 +1,7 @@
 
 module.exports = function (XHR, hawkClient, P) {
 if (!P) P = require("p-promise");
-if (!XHR) XHR = require("xmlhttprequest").XMLHttpRequest;
+if (!XHR) XHR = require("xhr2");
 if (!hawkClient) hawkClient = require("hawk").client;
 
 function Request(baseUrl, options) {

@@ -1,11 +1,11 @@
 
 module.exports = function(xhr, jwcrypto, P, FxAccountsClient) {
 
-if (!xhr) xhr = require('xmlhttprequest').XMLHttpRequest;
+if (!xhr) xhr = require('xhr2')
 if (!jwcrypto) {
-  jwcrypto = require('jwcrypto');
-  require("jwcrypto/lib/algs/rs");
-  require("jwcrypto/lib/algs/ds");
+  jwcrypto = require('browserid-crypto');
+  require("browserid-crypto/lib/algs/rs");
+  require("browserid-crypto/lib/algs/ds");
 }
 if (!P) P = require('p-promise');
 if (!FxAccountsClient) FxAccountsClient = require('fxa-js-client');
