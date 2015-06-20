@@ -1,0 +1,1 @@
+window.FxSync = require('./sync')();

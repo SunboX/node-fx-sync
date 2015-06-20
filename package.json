@@ -4,6 +4,7 @@
   "description": "Interact with Firefox Sync Servers",
   "main": "index.js",
   "scripts": {
+    "build": "grunt build",
     "test": "node test/crypto.js"
   },
   "repository": "https://github.com/zaach/node-fx-sync",
@@ -18,9 +19,17 @@
     "browserid-crypto": "~0.7.0",
     "request": "2.27.0",
     "p-promise": "0.2.5",
-    "fxa-js-client": "0.1.x",
+    "fxa-js-client": "~0.1.27",
     "hkdf": "0.0.1",
-    "xhr2": "~0.0.7",
+    "xhr2": "~0.1.2",
     "hawk": "~1.1.2"
+  },
+  "devDependencies": {
+    "browserify": "~10.2.4",
+    "grunt": "~0.4.5",
+    "grunt-browserify": "~3.8.0",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-uglify": "~0.9.1",
+    "sjcl": "git://github.com/bitwiseshiftleft/sjcl.git#a03ea8e"
   }
 }

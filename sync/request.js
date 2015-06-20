@@ -31,7 +31,7 @@ Request.prototype.put = function(path, payload, options) {
 
 Request.prototype.request = function request(path, options) {
   var deferred = P.defer();
-  var xhr = new XHR();
+  var xhr = new XHR({mozSystem: true /* XXX for Firefox OS */});
   var uri = this.baseUrl + path;
   var credentials = options.credentials || this.credentials;
   var payload;
