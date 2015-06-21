@@ -11,6 +11,8 @@ module.exports = function (grunt) {
       },
       options: {
         require: [
+          "./sync:fx-sync",
+
           "p-promise",
           "sjcl",
           "xhr2",
