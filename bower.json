@@ -1,0 +1,25 @@
+{
+  "name": "fos-fx-sync",
+  "main": "lib/fx-sync.js",
+  "version": "0.2.2",
+  "homepage": "https://github.com/cat-in-136/node-fx-sync",
+  "description": "Interact with Firefox Sync Servers",
+  "keywords": [
+    "firefox",
+    "accounts",
+    "sync"
+  ],
+  "license": "APL 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "Gruntfile.js",
+    "package.json",
+    "examples",
+    "entry.js",
+    "index.js"
+  ]
+}
